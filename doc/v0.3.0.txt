@@ -1,0 +1,23 @@
+###### calc.js v0.3.0 ######
+
+### Log ###
+
+- mult function implemented.
+- 5 tests added.
+
+### Tests ###
+
+add
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+✔ testFloatNumbers
+
+sub
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+
+mult
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+
+OK: 15 assertions (7ms)
