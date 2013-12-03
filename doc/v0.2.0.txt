@@ -1,0 +1,19 @@
+###### calc.js v0.2.0 ######
+
+### Log ###
+
+- sub function implemented.
+- 4 tests added.
+
+### Tests ###
+
+add
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+✔ testFloatNumbers
+
+sub
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+
+OK: 10 assertions (7ms)
