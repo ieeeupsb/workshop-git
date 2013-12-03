@@ -11,3 +11,8 @@ exports.add = function(x, y) {
 exports.sub = function(x, y) {
   return x - y;
 }
+
+// multiplies two numbers
+exports.mult = function(x, y) {
+  return x * y;
+}
