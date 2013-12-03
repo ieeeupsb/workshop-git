@@ -1,0 +1,16 @@
+###### calc.js v0.1.0 ######
+
+### Log ###
+
+- Initial version commit.
+- add function implemented.
+- 3 tests added.
+
+### Tests ###
+
+add
+✔ testPositiveNumbers
+✔ testNegativeNumbers
+✔ testFloatNumbers
+
+OK: 6 assertions (6ms)
