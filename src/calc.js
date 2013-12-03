@@ -6,6 +6,7 @@
 //
 //  - addition: add(x, y)
 //  - subtraction: sub(x, y)
+//  - multiplication: mult(x, y)
 
 // adds two numbers
 exports.add = function(x, y) {
