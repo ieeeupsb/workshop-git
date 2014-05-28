@@ -23,3 +23,8 @@ exports.sub = function(x, y) {
 exports.mult = function(x, y) {
   return x * y;
 }
+
+// divides two numbers
+exports.div = function(x, y) {
+  return x / y;
+}
