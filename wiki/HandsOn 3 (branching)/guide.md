@@ -35,7 +35,7 @@ $git branch <branch name> <commit sha1>
 
 💡 Agora que conheces o nome simbólico HEAD, fica a saber que podes usá-lo com uma syntaxe particular para referenciar _commits_. Basicamente existem dois operadores, `^` e `~` que a partir do HEAD/commit atual podes referenciar um pai desse commit. Uma imagem vale mais que mil palavras.
 
-![img](../img/head_graph.png)
+![img](https://raw.githubusercontent.com/ieeeupsb/workshop-git/master/wiki/img/head_graph.png)
 
 ## Alternar entre branches
 Para mudar a *branch* ativa, usa-se o comando `$git checkout <branch name>`. Como eu dei o nome _bugFix_ à minha branch, no meu terminal executo

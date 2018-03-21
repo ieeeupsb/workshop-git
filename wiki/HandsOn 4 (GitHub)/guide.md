@@ -5,7 +5,8 @@ Este será o último hands on do workshop e tem como objetivo:
 3. Explorar os comandos `push`, `pull` e `fetch`
 
 # Criar conta no GitHub
-(Ver aqui)[]
+[Ver aqui](https://github.com/ieeeupsb/workshop-git/wiki/%5BGitHub%5D-Criar-conta).
+
 # Criar um repositório vazio no GitHub
 Com o login devidamente efetuado, pode-se criar um repositório diretamente da página inicial (lado direito, na caixa *Your repositories*), do dashboard, ou através do link [https://github.com/new](https://github.com/new).
 

@@ -1,6 +1,6 @@
-Assim que temos um repositório local de alguma forma associado a um repositório remoto, basicamente faz-se o trabalho localmente como até agora foi visto. Fazer modificações, commits, criar branches, etc, tudo isso é trabalho local independente do que quer que esteja no repositório remoto.
+Assim que temos um repositório local de alguma forma associado a um repositório remoto, basicamente faz-se o trabalho localmente como até agora foi visto. Fazer modificações, fazer commits, criar branches, etc, tudo isso é trabalho local.
 
-A novidade são os comandos `clone` (já visto), `push` (já visto de forma superficial), `pull` e `fetch`, que serão abordados e recapitulados sucintamente.
+A novidade são os comandos `clone`, `push`, `pull` e `fetch`, que serão abordados sucintamente. São estes que permitem que comunicar com repositórios remotos.
 
 # git clone
 Este comando cria uma working directory que é copia de um repositório local ou remoto.
@@ -40,9 +40,5 @@ O comando `fetch` transfere os dados do servidor. Mas faz apenas isso, não alte
 
 O `push`, na realidade, faz um `fetch` seguido de um `merge` da branche especificada.
 
-# Workflow
-Trabalhar em repositórios é algo essencialmente local. A única interação que há com o servidor é quando queremos obter dados ou enviar dados. 
-
-Se no repositório estiverem várias pessoas a trabalhar, este é o workflow tipico:
-1. Atualizar o repositório local com os novos dados disponiveis no servidor.
-2. Todos os conceitos aprendidos nos repositórios locais são válidos aqui. Importa referir que apesar de associarmos que uma branch `A` local é o mesmo que a branch `A` no servidor, na prática isso não acontece, o git diferencia. Como tal, podemos ter conflitos como já foi visto. Se no branch `A` alterar o mesmo ficheiro que outra pessoa alterou e mandou para o repositório, o `pull` vai ter um conflito. O método de resolução é igual ao que já foi visto. 
+# Fork & Pull Requests
+Recomendo que leiam este [guiao](https://gist.github.com/Chaser324/ce0505fbed06b947d962) sobre forking e pull requests.
