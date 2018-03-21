@@ -178,9 +178,10 @@ Para o primeiro caso, usa-se o comando `$git reset <file>`. Podemos especificar 
 
 Para o segundo caso, usa-se `$git checkout -- <file>`. Aqui o parametro `<file>` é orbigatório.
 
+💡 `--` ??? ಠ_ಠ O `--` é tipicamente uma expressão da _shell_, para indicar o fim de comandos de opção, normalmente começados por `-`. No exemplo do checkout, imaginemos que temos um branch chamado _master_ e um ficheiro _master_. O checkout vai interpretar _master_ como uma branch, ou como um ficheiro? O `--` poderá ser usado para remover esta ambiguidade. Quando se tratam de branches, nunca se usa o `--`, mas se for um ficheiro, deve ser usado. No geral, é uma regra válida para diversos comandos, mas nada melhor que consultar o manual para ter a certeza, já que há comandos que ou apenas lidam com ficheiros ou apenas branches, não havendo margem para ambiguidades.
 # Reverter um *commit*
-Para reverter um commit, usa-se o comando `$git revert <commit SHA1>`. O SHA1 de cada commit pode ser obtido através do `$git log`.
+Para reverter um commit, usa-se o comando `$git revert <commit>`. O _commit_ pode ser identificado pelo seu SHA1 (ou parte dele), podendo este ser obtido através do `$git log`. Existe ainda uma notação simbólica `HEAD` mas que ainda não foi abordada.
 
-Ao contrário do que se possa pensar, o git não vai apagar o commit. Vai criar um novo commit que reverte o commit especificado. E por sua vez podemos reverter o commit que reverteu o commit que............. `segmentation fault (core dumped)`
+Ao contrário do que se possa pensar, o git não vai apagar o _commit_. Vai criar um novo commit que reverte o commit especificado. E por sua vez podemos reverter o commit que reverteu o commit que............. (╯°□°）╯︵ ┻━┻
 
-**Nota:** Antes de usar `revert`, é necessário garantir que não existem alterações na working directory. O `$git stash` é um comando útil aqui, mas apenas é explicado na parte de repositórios remotos.
+**Nota:** Antes de usar `revert`, é necessário garantir que não existem alterações na working directory. O `$git stash` é um comando útil aqui.
