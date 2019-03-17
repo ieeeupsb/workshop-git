@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+
+body { 
+	font-family: 'Droid Serif'; 
+}
+
+h1, h2, h3 {
+	font-family: 'Yanone Kaffeesatz';
+	font-weight: normal;
+}
+
+.remark-code, .remark-inline-code {
+	font-size: 18px;
+	font-family: Hack, monospace;
+}
+
+.remark-inline-code {
+	padding: .2em;
+	background: #e7e7e7;
+	border-radius: 0.5rem;
+}
+
+.de img {
+	max-width: 70%;
+	text-align: center;
+	display: flex;
+	padding-bottom:1em;
+}
+
+div.column:first-of-type {float:left}
+
+.split-30 .column:first-of-type {width: 30%}
+.split-30 .columnl {width: 70%; float:right;}
+.split-40 .column:first-of-type {width: 40%}
+.split-40 .columnl {width: 60%; float:right;}
+.split-50 .column:first-of-type {width: 50%}
+.split-50 .columnl {width: 50%; float:right;}
+.split-60 .column:first-of-type {width: 60%}
+.split-60 .columnl {width: 40%; float:right;}
+.split-70 .column:first-of-type {width: 70%}
+.split-70 .columnl {width: 30%; float:right;}
