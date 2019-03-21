@@ -131,3 +131,126 @@ $ git checkout –b <branch name>
 $ git checkout –b <branch name> <commit sha1>
 $ git checkout –b <branch name> HEAD~n
 ```
+
+---
+
+# Introduction to merging
+
+- At some point you will want to merge branches
+- Telling Git to merge two branches is easy
+- However, it's important to understand how Git does it, and what problems may occur
+
+
+- Scenario: You have a branch `fix-10`, which diverged from `master`
+- You want merge the changes from `fix-10` to `master`
+
+1. Checkout the branch that we will merge into (in this case, `master`)
+2. Run the command `$ git merge <source branch>` (`fix-10` in our example)
+3. Cross fingers
+
+---
+
+# How merging works
+
+- There are three possible scenarios when you attempt to merge branches
+	- **Fast-Forward**
+	- **Non-Fast Forward**
+	- **Conflict**
+
+---
+
+# How merging works
+## Fast-Forward
+
+- Git does **fast-forward** when one commit is directly reachable from another one
+- This is as simple as moving pointers, no further actions are needed
+
+.center[![example](/assets/branch-5a.svg)]
+
+---
+
+# How merging works
+## Fast-Forward
+
+1. We want to merge `new-branch` into `master`
+2. We checkout `master`
+3. `$ git merge new-branch`
+
+.center[![example](/assets/branch-5b.svg)]
+
+---
+
+# How merging works
+## Non-Fast Forward
+
+- If the two branches being merged diverged at some point, Git can't simply move pointers
+- Git finds the common *commit*  to both branches
+- Will see the changes performed on both branches
+- It sees that one or more files were modified, but at different chuncks
+- Then, Git can handle this automatically, it uses changes from both branches
+
+---
+
+# How merging works
+## Non-Fast Forward
+
+.center[![example](/assets/branch-5c.svg)]
+
+---
+
+# How merging works
+## Non-Fast Forward
+
+.center[![example](/assets/branch-5d.svg)]
+
+---
+
+# How merging works
+## CONFLICTS
+
+- Similar to the **non-fast forward scenarion**
+- However, the same file was modified on both branches on the same chuncks
+- Git doesn't know how to handle this, so it reports a conflict
+- The conflict is resolved manually by the user
+
+---
+
+# How merging works
+## CONFLICTS
+
+.center[![example](/assets/branch-5e.svg)]
+
+---
+
+# How merging works
+## CONFLICTS
+
+- Upon conflict, git will report which files have conflicts
+- It inserts delimeters on those files around chuncks with conflicts
+
+```
+>>>>>>> master
+...
+=======
+...
+<<<<<<< new-branch
+```
+
+- You edit the file manually
+- When done, stage files with conflicts and commit
+
+---
+
+# Delete branches
+
+- To delete a local branch:
+
+```bash
+$ git branch -d <branch>
+```
+
+- If the branch to be deleted is not totally merged with other branches (data loss), Git aborts the operation. To force, use `-D`
+
+```bash
+$ git branch -D <branch>
+```
