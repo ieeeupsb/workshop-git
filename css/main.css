@@ -66,9 +66,8 @@ h1, h2, h3 {
 }
 
 .remark-inline-code {
-	padding: .2em;
-	background: #e7e7e7;
-	border-radius: 0.2rem;
+	font-weight: bold;
+	color: var(--accent-primary);
 }
 
 .remark-code-span-highlighted {
