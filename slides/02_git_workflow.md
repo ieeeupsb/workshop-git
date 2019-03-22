@@ -8,9 +8,11 @@ template: slide_section
 layout: false
 
 # Git worflow
-## The three sections
+## The three sections/trees
 
-Insert image
+.center[
+![git trees](/assets/workflow.svg)
+]
 
 ---
 
