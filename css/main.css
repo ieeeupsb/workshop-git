@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+:root {
+	--bg-dark: #212121;
+	--accent-primary: #ff0036;
+}
+
+body { 
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7rem;
+	line-height:1.5;
+}
+
+.remark-slide-content {
+	font-size: inherit;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	margin: 1rem 0;
+}
+
+/**
+ * Used on the first slide
+ * */
+.slide_title {
+	position: relative;
+	background-color: var(--accent-primary);
+	color: white;
+}
+
+/**
+ * Used by title slides (first slide) to show the workshop title and authors, in addition to student branch logo and chapter logo. The logos must be contained in a div with class slide_logos
+ */
+.slide_logos {
+	display: flex;
+	padding: 1rem;
+	position: absolute;
+	bottom: 1em;
+	left: 3em;
+	right: 3em;
+}
+
+.slide_logos > img {
+	flex: 1;
+	margin: 0.5rem 1.5rem;
+}
+
+/**
+ * Used to introduce new section topics
+ */
+.slide_section {
+	background-color: var(--bg-dark);
+	color: white;
+}
+
+
+/** 
+ * Code snippets
+ */
+.remark-code, .remark-inline-code {
+	font-size: 0.8em;
+	font-family: Hack, monospace;
+}
+
+.remark-inline-code {
+	font-weight: bold;
+	color: var(--accent-primary);
+}
+
+.remark-code-span-highlighted {
+	color: white;
+	background-color:rgba(255, 99, 0, 0.88);
+}
+
+.flex {
+	display:flex;
+}
