@@ -13,7 +13,7 @@ layout: false
 	- A branch for a bugfix
 	- A branch for a new feature
 	- A branch for testing new ideas
-.center[![branches](/assets/branch-1.png)]
+.center[![branches](assets/branch-1.png)]
 ---
 
 # What is a branch?
@@ -36,7 +36,7 @@ layout: false
 	- Special symbolic pointer: **HEAD**
 	- It points to the local branch you are currently on
 
-![branch illustration](/assets/branch-2.png)
+![branch illustration](assets/branch-2.png)
 ]
 ---
 
@@ -59,7 +59,7 @@ What happens internally?
 ]
 
 .div[
-![branch illustration](/assets/branch-3.png)
+![branch illustration](assets/branch-3.png)
 ]
 ]
 
@@ -80,7 +80,7 @@ What happens internally?
 2. Working directory is updated
 ]
 .div[
-![branch checkout](/assets/branch-4.png)
+![branch checkout](assets/branch-4.png)
 ]
 ]
 
@@ -108,7 +108,7 @@ What happens internally?
 - ...
 ]
 .flex-child[
-![head operators](/assets/head-symbolic.png)
+![head operators](assets/head-symbolic.png)
 ]
 ]
 
@@ -165,7 +165,7 @@ $ git checkout –b <branch name> HEAD~n
 - Git does **fast-forward** when one commit is directly reachable from another one
 - This is as simple as moving pointers, no further actions are needed
 
-.center[![example](/assets/branch-5a.svg)]
+.center[![example](assets/branch-5a.svg)]
 
 ---
 
@@ -176,7 +176,7 @@ $ git checkout –b <branch name> HEAD~n
 2. We checkout `master`
 3. `$ git merge new-branch`
 
-.center[![example](/assets/branch-5b.svg)]
+.center[![example](assets/branch-5b.svg)]
 
 ---
 
@@ -194,14 +194,14 @@ $ git checkout –b <branch name> HEAD~n
 # How merging works
 ## Non-Fast Forward
 
-.center[![example](/assets/branch-5c.svg)]
+.center[![example](assets/branch-5c.svg)]
 
 ---
 
 # How merging works
 ## Non-Fast Forward
 
-.center[![example](/assets/branch-5d.svg)]
+.center[![example](assets/branch-5d.svg)]
 
 ---
 
@@ -218,7 +218,7 @@ $ git checkout –b <branch name> HEAD~n
 # How merging works
 ## CONFLICTS
 
-.center[![example](/assets/branch-5e.svg)]
+.center[![example](assets/branch-5e.svg)]
 
 ---
 

@@ -11,7 +11,7 @@ layout: false
 ## The three sections/trees
 
 .center[
-![git trees](/assets/workflow.svg)
+![git trees](assets/workflow.svg)
 ]
 
 ---
