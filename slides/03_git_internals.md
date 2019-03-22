@@ -9,7 +9,7 @@ layout: false
 # Git internals 
 
 .center[
-![internal objects](/assets/internals-3a.svg)
+![internal objects](assets/internals-3a.svg)
 ]
 
 ---
@@ -17,7 +17,7 @@ layout: false
 # Git internals 
 
 .center[
-![internal objects](/assets/internals-3b.svg)
+![internal objects](assets/internals-3b.svg)
 ]
 
 ---
@@ -25,5 +25,5 @@ layout: false
 # Git internals 
 
 .center[
-![internal objects](/assets/internals-3c.svg)
+![internal objects](assets/internals-3c.svg)
 ] 
